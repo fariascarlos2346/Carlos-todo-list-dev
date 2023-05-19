@@ -1,3 +1,4 @@
+
 * {
    margin: 0;
    padding: 0;
@@ -36,12 +37,42 @@ body {
    padding: 0 15px;
    float: right;
    cursor: pointer;
+   font-weight: 700;
 }
 
 .button-add-task:hover {
-   
+   opacity: 0.8;
+}
+
+.button-task:active {
+   opacity: 0.6;
+}
+
+.list-tasks {
+   width: 100%;
+   list-style: none;
+   margin-top: 30px;
+}
+
+.task {
+   background-color: #F2F2F2;
+   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 15px;
+   border-radius: 10px;
+   margin-bottom: 20px;
 }
 
 img {
    height: 30px;
+   opacity: 0;
+   transition: opacity 0.5s ease-in-out;
+   cursor: pointer;
+}
+
+.task:hover img {
+   opacity: 1;
 }

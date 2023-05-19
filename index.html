@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,27 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-   <title>Carlos-To-Do-List02</title>
+   <title>Carlos-todo-list-dev</title>
 </head>
+
 <body>
    <div class="container">
       <input class="input-task" placeholder="O que tenho que fazer...">
       <button class="button-add-task">Adicionar</button>
 
-      <ul>
-         <li>
+      <ul class="list-tasks">
+         <li class="task">
             <img src="./img/checked.png" alt="check-na-tarefa">
             <p>Dar um aló e diga que gostou!</p>
-            <img src="./img/checked.png" alt="tarefa-para-fazer">
+            <img src="./img/trash.png" alt="tarefa-para-fazer">
+         </li>
+         <li class="task">
+            <img src="./img/checked.png" alt="check-na-tarefa">
+            <p>Dar um aló e diga que gostou!</p>
+            <img src="./img/trash.png" alt="tarefa-para-fazer">
          </li>
       </ul>
    </div>
 </body>
+<script src="scripts.js"></script>
 </html>
